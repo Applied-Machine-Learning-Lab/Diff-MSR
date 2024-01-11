@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-class Douban():
+class Douban(torch.utils.data.Dataset):
     """
     Douban Dataset
 
@@ -35,7 +35,7 @@ class Douban():
         return self.items[index], self.targets[index]
 
 
-class DoubanMusic():
+class DoubanMusic(torch.utils.data.Dataset):
 
     def __init__(self, mode, path_base='/Douban/dataset/'):
         #mode: train / val / test

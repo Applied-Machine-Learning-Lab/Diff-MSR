@@ -19,5 +19,5 @@ Run: python douban_classifier_adversarial.py --beta 0.0002 --schedule other --ob
 
 **Stage 4**
 
-Improve the model on the sparse domain. Run the code:
-python douban_augment_final_v3.py --indexx 0 --learning_rate 2e-3 --T 500 --beta 0.0002 --schedule other --objective pred_v --auto_normalize 0 --job 1 --step1 30 --step2 50 --model_name fnn
+Goal: Improve the model on the sparse domain. 
+Run: python douban_augment_final_v3.py --indexx 0 --learning_rate 2e-3 --T 500 --beta 0.0002 --schedule other --objective pred_v --auto_normalize 0 --job 1 --step1 30 --step2 50 --model_name fnn
